@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Search</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <h1>Game Search</h1>
+    </header>
+    
+    <main>
+        <section id="search">
+            <h2>Search for Games</h2>
+            <input type="text" id="searchInput" placeholder="Enter game name..." onkeyup="searchGames()">
+            
+            <h2>Filter by Genre</h2>
+            <select id="genreSelect" onchange="filterByGenre()">
+                <option value="all">All Genres</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="rpg">RPG</option>
+                <option value="platformer">Platformer</option>
+                <option value="shooter">Shooter</option>
+                <option value="sandbox">Sandbox</option>
+                <option value="battle royale">Battle Royale</option>
+                <option value="party">Party</option>
+                <option value="tactical shooter">Tactical Shooter</option>
+                <option value="action-adventure">Action-Adventure</option>
+                <option value="survival horror">Survival Horror</option>
+                <option value="first-person shooter">First-Person Shooter</option>
+                <!-- Add more genre options as needed -->
+            </select>
+        </section>
+        
+        <section id="results">
+            <h2>Search Results</h2>
+            <div id="game-list"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Game Search. All rights reserved.</p>
+    </footer>
+    
+    <script src="website.js"></script>
+</body>
+</html>
